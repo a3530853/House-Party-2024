@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdf6e3;
+    color: #333;
+    background-image: url("https://imgs.search.brave.com/JEnjOEPbbfAW7MdLZvfFqhRbs8WEImSHxGS5JuXBwhc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzUwLzEwLzAy/LzM2MF9GXzk1MDEw/MDI3MV9XakN5cUlE/U1FNOFFKeWc0bExQ/aEtMYlRaMVdxekUx/ei5qcGc");
+}
+
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('confetti.gif') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #2E86C1;
+    background-image: url("https://imgs.search.brave.com/JEnjOEPbbfAW7MdLZvfFqhRbs8WEImSHxGS5JuXBwhc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzUwLzEwLzAy/LzM2MF9GXzk1MDEw/MDI3MV9XakN5cUlE/U1FNOFFKeWc0bExQ/aEtMYlRaMVdxekUx/ei5qcGc");
+}
+
+.nav-brand, .nav-slogan {
+    color: #fff;
+    text-align: center;
+}
+
+.nav-brand {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.nav-slogan {
+    font-size: 20px;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    background-image:("https://imgs.search.brave.com/JEnjOEPbbfAW7MdLZvfFqhRbs8WEImSHxGS5JuXBwhc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzUwLzEwLzAy/LzM2MF9GXzk1MDEw/MDI3MV9XakN5cUlE/U1FNOFFKeWc0bExQ/aEtMYlRaMVdxekUx/ei5qcGc");
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 150px;
+    margin-top: 0px;
+}
+.hero h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+.btn {
+    padding: 12px 24px;
+    background-color: #F39C12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 110px;
+    margin-top: 0px;
+}
+
+.btn:hover {
+    background-color: #E67E22;
+}
+
+#details {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #FDEDEC;
+    color: #2C3E50;
+}
+
+.details-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+#form{
+    background-color: purple;
+    background-image: url("https://imgs.search.brave.com/JEnjOEPbbfAW7MdLZvfFqhRbs8WEImSHxGS5JuXBwhc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzUwLzEwLzAy/LzM2MF9GXzk1MDEw/MDI3MV9XakN5cUlE/U1FNOFFKeWc0bExQ/aEtMYlRaMVdxekUx/ei5qcGc");
+}
+#form h2{
+    background-color: red;
+    text-align: center;
+    color: white;
+    text-decoration: solid;
+    margin-bottom: 0px;
+    font-size: xx-large;
+    text-decoration:underline;
+    text-decoration-color: whitered;
+}
+.form-container {
+    max-width: 500px;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: white;
+}
+.form-container h2{
+    color: #fff;
+}
+form input::placeholder,
+form textarea::placeholder,
+form select {
+    color: #ffffff; /* Change this to your desired color */
+    opacity: 1; /* Ensures the color is fully opaque */
+}
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+}
+
+form button {
+    width: 100%;
+    background-color: #27ae60;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2ecc71;
+}
+
+#formMessage {
+    display: none;
+    margin-top: 10px;
+    color: green;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #2E86C1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    margin-top: 30px; /* Space above the links */
+}
+
+.nav-links a {
+    color: #fff; /* Link color */
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make links bold */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.nav-reason{
+    color: white;
+    font-size: 68px;
+    font-family:serif
+     }
+.hidden {
+    display: none;
+}
+
+.hero ul{
+    font-size: 20px;
+    margin-top: 0px;
+}
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+/* Sliding Text Effect */
+.slide-in {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    animation: slideIn 1.5s forwards ease-in-out;
+    text-align: center;
+}
+
+/* Slide-In Animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hide loading screen after animation */
+#loadingScreen.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    nav{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #2E86C1;
+    padding: 20px;
+    }
+    .nav-brand {
+        font-size: 20px;
+        margin: auto;
+    }
+        
+    .nav-slogan {
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    #details {
+        padding: 30px 15px;
+    }
+
+    .details-container {
+        max-width: 90%;
+    }
+
+    .form-container {
+        max-width: 90%;
+    }
+    #details iframe {
+        width: 100%; /* Full width for small screens */
+        height: 300px; /* Adjust height as needed */
+    }
+    #form h2{
+        margin-top: 150px;
+    }
+    /* Loading Screen Styles */
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+/* Sliding Text Effect */
+.slide-in {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    animation: slideIn 1.5s forwards ease-in-out;
+}
+
+/* Slide-In Animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hide loading screen after animation */
+#loadingScreen.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background-color: #2E86C1;
+    padding: 20px;
+    }
+    .nav-reason{
+        color: white;
+        font-size: 28px;
+        font-family:serif
+         }
+    .nav-brand {
+        font-size: 35px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+
+    .nav-slogan {
+        font-size: 25px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-bottom: 0px;
+        margin-top: 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .hero h2{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 20px;
+        margin-bottom: 300px;
+        margin-top: 0px;
+    }
+
+    .details-container {
+        max-width: 95%;
+    }
+
+    .form-container {
+        max-width: 95%;
+        margin-top: 350px;
+    }
+
+    form input, form select, form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    form button {
+        font-size: 20px;
+    }
+    #details iframe {
+        height: 200px; /* Further reduce height for mobile */
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center; /* Center the links horizontally */
+        margin-top: 10px; /* Space above the links */
+        margin-bottom: 275px;
+    }
+
+    .nav-links a {
+        color: #fff; /* Link color */
+        margin: 0 15px; /* Space between links */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold; /* Make links bold */
+    }
+    .hero ul{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    #form h2{
+        margin-top: 150px;
+    }
+    /* Loading Screen Styles */
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+/* Sliding Text Effect */
+.slide-in {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    animation: slideIn 1.5s forwards ease-in-out;
+}
+
+/* Slide-In Animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hide loading screen after animation */
+#loadingScreen.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+}

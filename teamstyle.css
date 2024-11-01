@@ -1,0 +1,215 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("https://imgs.search.brave.com/JEnjOEPbbfAW7MdLZvfFqhRbs8WEImSHxGS5JuXBwhc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzUwLzEwLzAy/LzM2MF9GXzk1MDEw/MDI3MV9XakN5cUlE/U1FNOFFKeWc0bExQ/aEtMYlRaMVdxekUx/ei5qcGc");
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #2E86C1;
+    padding: 20px;
+    background-image: url("https://imgs.search.brave.com/JEnjOEPbbfAW7MdLZvfFqhRbs8WEImSHxGS5JuXBwhc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzUwLzEwLzAy/LzM2MF9GXzk1MDEw/MDI3MV9XakN5cUlE/U1FNOFFKeWc0bExQ/aEtMYlRaMVdxekUx/ei5qcGc");
+}
+
+.nav-brand, .nav-slogan {
+    color: #fff;
+    text-align: center;
+}
+
+.nav-brand {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.nav-slogan {
+    font-size: 20px;
+}
+.nav-links {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    margin-top: 10px; /* Space above the links */
+}
+
+.nav-links a {
+    color: #fff; /* Link color */
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make links bold */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.team-member {
+    background-color: rgb(116, 45, 112);
+    border: 2px solid #F39C12;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+.team-member1 {
+    background-color:rgb(116, 45, 112);
+    border: 2px solid #F39C12;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    color: white;
+}
+.team-member2 {
+    background-color:rgb(116, 45, 112);
+    border: 2px solid #F39C12;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    color: white;
+}
+.team-member img {
+    width: 100%;
+    border-radius: 50%; /* Circular images */
+    max-width: 150px; /* Maximum size for images */
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #2E86C1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+@media (max-width: 768px) {
+    nav{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #2E86C1;
+    padding: 20px;
+    }
+    .nav-brand {
+        font-size: 20px;
+    }
+        
+    .nav-slogan {
+        font-size: 28px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    #details {
+        padding: 30px 15px;
+    }
+
+    .details-container {
+        max-width: 90%;
+    }
+
+    .form-container {
+        max-width: 90%;
+    }
+    #details iframe {
+        width: 100%; /* Full width for small screens */
+        height: 300px; /* Adjust height as needed */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #2E86C1;
+    padding: 20px;
+    }
+    .nav-brand {
+        font-size: 18px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .nav-slogan {
+        font-size: 25px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 20px;
+    }
+
+    .details-container {
+        max-width: 95%;
+    }
+
+    .form-container {
+        max-width: 95%;
+    }
+
+    form input, form select, form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    form button {
+        font-size: 20px;
+    }
+    #details iframe {
+        height: 200px; /* Further reduce height for mobile */
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic House Party Invitation</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Join us for an unforgettable house party! Register now and secure your spot for a night of fun, music, and good vibes.">
+    <meta name="keywords" content="house party, Register, event, fun, party, gathering">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons for social media and party icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Confetti Background -->
+    <div class="confetti"></div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-brand">Batch 2025 <br>Presents<br></div>
+        <div class="nav-reason" ><strong>House Party 2024</strong></div>
+        <div class="nav-slogan"><br>Experience the unforgettable!</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#form">Register</a>
+            <a href="team.html">Team</a> <!-- Link to your team page -->
+            <a href="Gallery.html">Gallery</a>
+        </div>
+    </nav>
+    <!-- Loading Screen -->
+<div id="loadingScreen">
+    <h1 class="slide-in">Welcome to greatest house party ever</h1>
+</div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>You're Invited to the Ultimate Party!</h1>
+            <p>Join us for an unforgettable night of music, dancing, and celebration. Register now and let’s make memories!</p>
+            <a href="#form" class="btn" hidden>Register Now</a>
+            <strong><h2 >Rules for House Party 2024<br></h2>
+            <p class="Rules" style="margin:auto ;"><ul style="text-align: left;">
+                <li>Open for 9th to 12th grade stephinians and ex-stephinians only.<br></li>
+                <li>Registration is madatory: No entry will be permitted without prior registration.<br></li>
+                <li>No alcoholic items are allowed inside party. Possesion or consumption will result in immediate expulsion.<br></li>
+                <li>Respect fellow partygoers, hosts and property.<br></li>
+                <li>Once amount is submitted its not refundable.</li></ul>
+            </p>
+            </strong>
+        </div>
+    </section>
+
+    <!-- Party Details Section -->
+    <section id="details" hidden>
+        <div class="details-container">
+            <h2>Party Details</h2>
+            <p>Date: <strong>October 31, 2024</strong></p>
+            <p>Time: <strong>8:00 PM - Till Late</strong></p>
+            <p>Location: <strong>1234 Party Street, Fun City</strong></p>
+
+            <!-- Map Embed -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345080043!2d144.9556511153179!3d-37.81732797975181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xfb7b639e1cd5c97e!2s1234%20Party%20St%2C%20Fun%20City!5e0!3m2!1sen!2sus!4v1633562807854!5m2!1sen!2sus" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Register Form Section -->
+    <section id="form" >
+            <h2><strong>Sorry you are late no more entries are permitted.</strong></h2>
+        <div class="form-container"hidden>
+            <h2>Register for the Party</h2>
+            <form action="https://formspree.io/f/xeoqokqj" method="POST" id="rsvpForm" data-success="Thank you! Your registration has been received.">
+                <label for="Gender">Title</label>
+                <select id="Gender" name="Gender" required>
+                    <option value="" disabled selected>Select your title</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                </select>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                
+                <label for="class">Select Your Class:</label>
+                <select id="class" name="class" required>
+                    <option value="" disabled selected>Select your class</option>
+                    <option value="9">lX</option>
+                    <option value="10">X</option>
+                    <option value="11">Xl</option>
+                    <option value="12">Xll</option>
+                    <option value="ex-stephinians">EX-STEPHINIANS</option>
+                </select>
+                <label for="House">Select Your House:</label>
+                <select id="class" name="class" required>
+                    <option value="" disabled selected>Select your House</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Red">Red</option>
+                    <option value="Green">Green</option>
+                    <option value="Not Applicable">Not Applicable</option>
+                </select>
+                <label for="payment">Select Mode of payment:</label>
+                <select id="class" name="class" required>
+                    <option value="" disabled selected>Select Mode of payment</option>
+                    <option value="Cash">Cash</option>
+                    <option value="Online">Online</option>
+                </select>
+                
+                <button type="submit" class="btn">Submit Registration</button>
+            </form>
+            <div id="formMessage" class="hidden">Thank you! Your registration has been received.</div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Epic House Party | Let’s Celebrate!</p>
+    </footer>
+
+    <!-- Custom JS for Interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
