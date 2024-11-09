@@ -89,11 +89,21 @@
                 <input type="email" id="email" name="email" required>
                <label for="Phone No.">Phone No.:</label>
                 <input type="number" id="number" name="number" required>
-              
+              `` <label for="class">Select Your Class:</label>
+                <select id="class" name="class" required>
+                    <option value="" disabled selected>Select your class</option>
+                    <option value="9">lX</option>
+                    <option value="10">X</option>
+                    <option value="11">Xl</option>
+                    <option value="12">Xll</option>
+                    <option value="ex-stephinians">EX-STEPHINIANS</option>
+                </select>
                 <!-- Payment Screenshot Field -->
                 <label for="payment-screenshot">Upload Payment Screenshot:</label>
                 <input type="file" id="payment-screenshot" name="payment-screenshot" accept="image/*" required>
                 <input type="hidden" name="_next" value="https://house-party-2024.netlify.app#paymentForm">
+                <input type="checkbox" id="Confirmation" name="Confirmation" value="Confirmed" required>
+                <label for="vehicle1"> I have added a note of my name while making payment.</label><br>
                 <!-- Submit Button -->
                 <button type="submit">Submit</button>
               </form>
