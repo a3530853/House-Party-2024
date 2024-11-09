@@ -1,4 +1,4 @@
-* {
+f* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -279,6 +279,11 @@ align-items: center;
     color: white;
     text-align:center;
 }
+.detailhero li{
+    font-size: 20px;
+    margin-top: 0px;
+    color: white;
+    text-align:center;
 /* Media Queries for Responsiveness */
 
 /* For tablets and small screens */
