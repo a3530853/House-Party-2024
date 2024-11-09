@@ -71,7 +71,34 @@
     </section>
 
     <!-- Register Form Section -->
-    <section id="form" >
+    <section id="paymentForm">
+        <div class="form-container">
+            <h2>Submit Payment Details</h2>
+            <form action="https://formsubmit.co/adityamathur292@gmail.com" method="POST" enctype="multipart/form-data">
+                <!-- Hidden field to specify form subject (optional) -->
+                <input type="hidden" name="_subject" value="Payment Form Submission">
+              
+                <!-- Full Name Field -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+              
+                <!-- Email Address Field -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <!-- Payment Screenshot Field -->
+                <label for="payment-screenshot">Upload Payment Screenshot:</label>
+                <input type="file" id="payment-screenshot" name="payment-screenshot" accept="image/*" required>
+                <input type="hidden" name="_next" value="https://house-party-2024.netlify.app#paymentForm">
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+              </form>
+              
+              
+            <div id="paymentFormMessage" class="hidden">Thank you! Your payment details have been received.</div>
+        </div>
+    </section>
+    <section id="form" hidden>
             <h2><strong>Sorry you are late no more entries are permitted.</strong></h2>
         <div class="form-container"hidden>
             <h2>Register for the Party</h2>
