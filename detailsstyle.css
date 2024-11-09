@@ -1,15 +1,15 @@
-.hero h1 {
+.detailhero h1 {
     font-size: 48px;
     margin-bottom: 0px;
     margin-top: 30px;
 }
 
-.hero p {
+.detailhero p {
     font-size: 20px;
     margin-bottom: 90px;
     margin-top: 0px;
 }
-.hero h2{
+.detailhero h2{
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 40px;
