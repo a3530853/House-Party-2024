@@ -271,11 +271,13 @@ align-items: center;
     margin-bottom: 0px;
     font-size: 40px;
     color: white;
+    text-align:center;
 }
 .detailhero ul{
     font-size: 20px;
     margin-top: 0px;
     color: white;
+    text-align:center;
 }
 /* Media Queries for Responsiveness */
 
