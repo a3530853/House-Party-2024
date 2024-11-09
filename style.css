@@ -251,7 +251,26 @@ footer {
     visibility: hidden;
 }
 
+.detailhero h1 {
+    font-size: 48px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
 
+.detailhero p {
+    font-size: 20px;
+    margin-bottom: 90px;
+    margin-top: 0px;
+}
+.detailhero h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+.detailhero ul{
+    font-size: 20px;
+    margin-top: 0px;
+}
 /* Media Queries for Responsiveness */
 
 /* For tablets and small screens */
