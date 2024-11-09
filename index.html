@@ -44,7 +44,7 @@
         <div class="hero">
             <h1>You're Invited to the Ultimate Party!</h1>
             <p>Join us for an unforgettable night of music, dancing, and celebration. Register now and let’s make memories!</p>
-            <a href="#paymentForm" class="btn">Register Now</a>
+            <a href="#paymentForm" class="btn">Pay Now</a>
             <strong><h2 >Rules for House Party 2024<br></h2>
             <p class="Rules" style="margin:auto ;"><ul style="text-align: left;">
                 <li>Open for 9th to 12th grade stephinians and ex-stephinians only.<br></li>
@@ -80,8 +80,9 @@
             <h2>Submit Payment Details</h2>
             <form action="https://formsubmit.co/adityamathur292@gmail.com" method="POST" enctype="multipart/form-data">
                 <!-- Hidden field to specify form subject (optional) -->
+                <input type="hidden" name="_cc" value="ptwshorts@gmail.com">
                 <input type="hidden" name="_subject" value="Payment Form Submission">
-              <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_captcha" value="false">
                 <!-- Full Name Field -->
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -89,9 +90,9 @@
                 <!-- Email Address Field -->
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
-               <label for="Phone No.">Phone No.:</label>
+                <label for="Phone No.">Phone No.:</label>
                 <input type="number" id="number" name="number" required>
-              `` <label for="class">Select Your Class:</label>
+                <label for="class">Select Your Class:</label>
                 <select id="class" name="class" required>
                     <option value="" disabled selected>Select your class</option>
                     <option value="9">lX</option>
