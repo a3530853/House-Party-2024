@@ -1,12 +1,16 @@
-#details {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #FDEDEC;
-    color: white;
-     background-image: url("https://imgs.search.brave.com/JEnjOEPbbfAW7MdLZvfFqhRbs8WEImSHxGS5JuXBwhc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzUwLzEwLzAy/LzM2MF9GXzk1MDEw/MDI3MV9XakN5cUlE/U1FNOFFKeWc0bExQ/aEtMYlRaMVdxekUx/ei5qcGc");
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 0px;
+    margin-top: 30px;
 }
 
-.details-container {
-    max-width: 800px;
-    margin: 0 auto;
+.hero p {
+    font-size: 20px;
+    margin-bottom: 90px;
+    margin-top: 0px;
+}
+.hero h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
 }
