@@ -359,7 +359,7 @@ align-items: center;
 .slide-in {
     color: white;
     font-size: 2rem;
-    font-family: 'Pacifico', cursive;
+     
     animation: slideIn 1.5s forwards ease-in-out;
 }
 
@@ -495,7 +495,7 @@ align-items: center;
 .slide-in {
     color: white;
     font-size: 2rem;
-    font-family: 'Pacifico', cursive;
+     
     animation: slideIn 1.5s forwards ease-in-out;
 }
 
