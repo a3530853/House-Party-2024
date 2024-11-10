@@ -101,13 +101,29 @@ body {
 .gallery-item:hover img {
     transform: scale(1.05); /* Zoom effect on hover */
 }
-
+.gallery-item video {
+    width: 200px; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space */
+    transition: transform 0.3s; /* Smooth zoom effect */
+}
 footer {
     background-color: #2E86C1;
     color: #fff;
     padding: 20px;
     text-align: center;
     position: relative;
+}
+#playButton {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    font-size: 16px;
+    cursor: pointer;
+}
+#playButton:hover {
+    background-color: #45a049;
 }
 @media (max-width: 768px) {
     nav{
