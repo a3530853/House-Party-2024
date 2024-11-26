@@ -13,7 +13,7 @@ document.getElementById('rsvpForm').addEventListener('submit', function (e) {
             document.getElementById('formMessage').classList.remove('hidden');
             this.reset(); // Reset form fields
             document.getElementById('formMessage').textContent = "Thank you! Your registration has been received.";
-            document.write("Thank you! Your registration has been received.")
+            alert("Thank you! Your registration has been received.");
         } else {
             alert('There was an issue with your submission. Please try again.');
         }
