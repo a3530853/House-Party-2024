@@ -1,4 +1,4 @@
-document.getElementById('paymentForm').addEventListener('submit', function (e) {
+document.getElementById('rsvpForm').addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent default form submission and redirection
     console.log('Form submission intercepted.'); // Debugging statement
 
@@ -10,10 +10,10 @@ document.getElementById('paymentForm').addEventListener('submit', function (e) {
         }
     }).then(response => {
         if (response.ok) {
-            document.getElementById('paymentForm').classList.remove('hidden');
+            document.getElementById('formMessage').classList.remove('hidden');
             this.reset(); // Reset form fields
-            document.getElementById('paymentForm').textContent = "Thank you! Your registration has been received.";
-            alert("Thank you! Your registration has been received.");
+            document.getElementById('formMessage').textContent = "Thank you! Your registration has been received.";
+            document.write("Thank you! Your registration has been received.")
         } else {
             alert('There was an issue with your submission. Please try again.');
         }
