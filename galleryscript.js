@@ -15,7 +15,7 @@ const videos = document.querySelectorAll('.gallery-item video');
             }
         });
     });
-const folderId = "1dLka9CBmhbfon_i8efGiqqdBmEgPoec3"; // Your folder ID
+const folderId = "1X0iScAnflrZs9YwajZrfn_uRnSfpaDYl"; // Your folder ID
         const apiKey = "AIzaSyDBR2C3h4JuS385t4HFeil0TdQ1nGH_wQQ"; // Your API key
 
         const imagesDiv = document.getElementById("images");
