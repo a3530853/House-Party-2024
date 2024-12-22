@@ -15,10 +15,10 @@ const videos = document.querySelectorAll('.gallery-item video');
             }
         });
     });
-const folderId = "1uqsPtHcSeyjLH-T92U6EK2xYISjC468h"; // Your folder ID
+const folderId = "1dLka9CBmhbfon_i8efGiqqdBmEgPoec3"; // Your folder ID
         const apiKey = "AIzaSyDBR2C3h4JuS385t4HFeil0TdQ1nGH_wQQ"; // Your API key
 
-        const imagesDiv = document.getElementById("images");
+        const filesDiv = document.getElementById("files");
 
         // Fetch files in the folder using Google Drive API
         fetch(`https://www.googleapis.com/drive/v3/files?q='${folderId}'+in+parents&key=${apiKey}`)
@@ -26,20 +26,31 @@ const folderId = "1uqsPtHcSeyjLH-T92U6EK2xYISjC468h"; // Your folder ID
             .then(data => {
                 if (data.files && data.files.length > 0) {
                     data.files.forEach(file => {
-                        if (file.mimeType.startsWith("image/")) { // Only display images
+                        if (file.mimeType.startsWith("image/")) {
+                            // Render images
                             const img = document.createElement("img");
                             img.src = `https://drive.google.com/uc?id=${file.id}`;
                             img.alt = file.name;
                             img.style.width = "300px";
                             img.style.margin = "10px";
-                            imagesDiv.appendChild(img);
+                            filesDiv.appendChild(img);
+                        } else if (file.mimeType.startsWith("video/")) {
+                            // Render videos
+                            const video = document.createElement("video");
+                            video.src = `https://drive.google.com/uc?id=${file.id}`;
+                            video.controls = true;
+                            video.style.width = "300px";
+                            video.style.margin = "10px";
+                            filesDiv.appendChild(video);
+                        } else {
+                            console.log(`Skipping unsupported file type: ${file.name} (${file.mimeType})`);
                         }
                     });
                 } else {
-                    imagesDiv.innerHTML = "<p>No images found in this folder.</p>";
+                    filesDiv.innerHTML = "<p>No files found in this folder.</p>";
                 }
             })
             .catch(error => {
                 console.error("Error fetching files:", error);
-                imagesDiv.innerHTML = "<p>Failed to load images.</p>";
+                filesDiv.innerHTML = "<p>Failed to load files.</p>";
             });
