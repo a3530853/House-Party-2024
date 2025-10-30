@@ -419,7 +419,7 @@ align-items: center;
         margin-bottom: 0px;
     }
     .hero h2{
-        margin-top: -90px;
+        margin-top: 90px;
         margin-bottom: 0;
     }
     .hero p {
@@ -473,6 +473,9 @@ align-items: center;
         margin-top: 0px;
     }
     #form h2{
+        margin-top: 150px;
+    }
+    footer{
         margin-top: 150px;
     }
     /* Loading Screen Styles */
